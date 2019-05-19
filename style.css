@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url(img/bg.png), url(img/bg-color.png);
+	-webkit-background-size: cover, cover;
+	     -o-background-size: cover, cover;
+	        background-size: cover, cover;
+	background-repeat: no-repeat, no-repeat;
+	max-width: 1920px;
+	height: 100vh;
+	font-family: Montserrat, Arial, serif;
+	color: #637570;
+}
+
+main{
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 340px;
+	height: 555px;
+	background-color: #FFF;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	margin: 50px auto;
+	opacity: 1;
+}
+
+.price{
+	height: 28px;
+	background-color: #eee4a9;
+	padding: 25px ;
+}
+
+.price_text{
+	width: 70%;
+	display: inline-block;
+}
+
+.price_text h1{
+	font-size: 14px;
+}
+
+.price_text p{
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+.price_product{
+	width: 28%;
+	display: inline-block;
+	font-size: 36px;
+	line-height: 28px;
+	text-align: right;
+	letter-spacing: -2px;
+}
+
+form{
+	margin: 45px 24px 15px;
+	color: #727f82;
+}
+
+label{
+	font-size: 13px;
+}
+p{
+	font-size: 12px;
+}
+
+input, select{
+	width: 288px;
+	height: 41px;
+	border: 1px solid #b3c1c4;
+	font-size: 13px;
+	padding: 10px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 8px 0 28px;
+	color: #707C7F;
+}
+
+input:focus{
+	border-color: #7fcddf;
+}
+
+select[name="Month"] {
+	width: 175px;
+}
+select[name="Year"] {
+	margin-left: 13px;
+	width: 95px;
+}
+option{
+	color: #727f82;
+}
+
+input[id="cvv"] {
+	width: 96px;
+
+}
+
+input[id="cvv"] + p {
+	display: inline-block;
+	padding-left: 5px;
+	line-height: 41px;
+	position: relative;	
+}
+
+input[id="cvv"] + p:after{
+	content: '';
+	background-color: #9eabad;
+	height: 1px;
+	width: 83px;
+	display: inline;
+	position: absolute;
+	top: 29px;
+	right: 0;
+}
+
+.pay{
+	background-color: #26b167;
+	width: 288px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 41px;
+	color: #f4f5f5;
+	border: none;
+	position: relative;
+	margin-top: 50px;
+}
+.pay:before{
+	content: '';
+	height: 1px;
+	background-color: #E3E7E8;
+	width: 288px;
+	display: block;
+	position: absolute;
+	top: -38px;
+}
+
+.cancel{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #dae0e0;
+	margin: 15px auto;
+	color: #a6b1b3;
+	display: block;
+}

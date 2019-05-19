@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="price">
+				<div class="price_text">
+					<h1>Harold Finch</h1>
+					<p>Your total</p>
+				</div>
+				<div class="price_product">$88</div>
+			</div>
+			<div class="info">
+				<form action="#">
+					<label for="credit_card" >Credit card number</label>
+					<input type="password" name="credit_card" id="credit_card" minlength="16" maxlength="16">
+
+					<label for="month">Expiration date</label><br>
+					<select name="Month" id="Month">
+						<option value disabled="Month" selected>Month</option>
+						<option value="Январь">Январь</option>
+						<option value="Февраль">Февраль</option>
+					</select>
+
+
+					<label for="Year"></label>
+					<select name="Year" id="Year">
+						<option value disabled="Year" selected>Year</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+					</select>
+
+					<label for="cvv">CVV</label><br>
+					<input type="password" id="cvv" minlength="3" maxlength="4">
+					<p>3 or 4 didgits - view example</p>
+					
+					
+					<button type="submit" class="pay">Pay</button>
+					<button type="submit" class="cancel">Cancel order</button>		
+				</form>
+
+			</div>
+		</div>
+	</main>
+</body>
+</html>
